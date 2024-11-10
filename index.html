@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outdated File</title>
     <style>
+        /* General Body Styles */
         body {
             background-color: #333; /* Dark gray background */
             color: #ccc; /* Light gray text */
@@ -18,40 +18,63 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
-        
+
+        /* Header Styles */
         h1 {
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 3vw; /* Responsive font size */
             color: #bbbb; /* Lighter gray for the header text */
-            margin-bottom: 20px;
-            
+            margin-bottom: 2rem;
         }
-        
-        booger {
+
+        /* Content Styles (formerly <booger>) */
+        .booger {
             font-weight: bold;
-            font-size: 1rem;
-            color: #bbb7; /* Lighter gray for the header text */
-            margin-bottom: 15px;
-            margin-left: 150px;
-            margin-right: 150px;
+            font-size: 1.5rem; /* Larger text size */
+            color: #bbb7; /* Slightly lighter gray */
+            margin: 1rem auto;
+            padding: 0 1rem;
+            line-height: 1;
+            max-width: 90%; /* Prevent text from overflowing */
+            text-align: middle;
+        }
+
+        /* Smaller Screens Adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 5vw; /* Increase font size on smaller screens */
+            }
+
+            .booger {
+                font-size: 1.2rem; /* Slightly smaller text on mobile */
+                max-width: 95%; /* More space for text on smaller screens */
+            }
+        }
+
+        /* Very Small Screens (Mobile Phones) */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 6vw; /* Even larger font size for small screens */
+            }
+
+            .booger {
+                font-size: 1rem; /* Smaller font for better readability */
+                max-width: 90%; /* Ensure text fits well */
+            }
         }
     </style>
 </head>
 <body>
     <h1>OUTDATED FILE</h1>
 
-    <booger>
-            this file is outdated, and ur gonna need a new one.
-            the main reason is because i made it so the tab name randomizes
-            to something educational, like Google Docs or Google Drive.
-    </booger>
+    <div class="booger">
+        This file is outdated, and you're going to need a new one. The main reason is that I made it so the tab name randomizes to something educational, like Google Docs or Google Drive.
+    </div>
     
-    <booger>
-            Also, you probably wont have to ever get a new file again because
-            I fixed a lot of back end stuff which wont really have an impact
-            on what the site looks like but it just makes stuff easier
-            for me when adding new stuff.
-    </booger>
+    <div class="booger">
+        Also, you probably won't have to get a new file again because I fixed a lot of backend stuff, which won't really impact what the site looks like, but it makes things easier for me when adding new features.
+    </div>
 </body>
 </html>
